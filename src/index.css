@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color:#1b052e;
+}
+.main{
+  width: 100%;
+  /* height: auto; */
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10rem;
+  padding-bottom: 7rem;
+
+}
+.main img{
+  width: 5rem;
+  height: 13%;
+}
+.main p{
+  color: white;
+  font-size: 1rem;
+  font-weight:lighter;
+  margin: 15px 0;
+}
+.search{
+  width: 325px;
+  height: 45px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 7px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+.search input{
+  border: none;
+  outline: none;
+  margin-left: 5px;
+  width: 270px;
+  font-size: 0.9rem;
+}
+i.fa.fa-plus{
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: rgb(109, 108, 108);
+}
+i.fa.fa-plus:hover{
+  color: rgb(21, 209, 52);
+}
+#edit_itemd{
+  color: rgb(21, 209, 52);
+}
+i.fa-regular.fa-trash-can{
+  cursor: pointer;
+  font-size: 1rem;
+}
+i.fa-solid.fa-pen-to-square{
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 7px;
+}
+#list{
+  margin-top: 5px;
+  justify-content: space-between;
+  background-color: #BD5095;
+  color: white;
+  font-size: 0.95rem;
+  margin-bottom: 0;
+  transition: all 0.4s linear;
+}
+#list:hover{
+background-color: white;
+color: #1b052e;
+}
+
+#list:hover i.fa-regular.fa-trash-can{
+  color: rgb(230, 25, 25);
+}
+
+#list:hover i.fa-solid.fa-pen-to-square{
+  color: rgb(21, 209, 52);
+}
+#list:last-child{
+  margin-bottom: 25px;
+}
+button{
+  width: 120px;
+  height: 36px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: rgb(109, 108, 108);
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+button:hover{
+  animation: 1s ease-in alternate-reverse;
+  background-color: #BD5095;
+  color: white;
+}
+
+@media(max-width:340px){
+  .search{
+    width: 250px;
+  }
+  #mobile_list{
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+  }
+  .main img{
+    width: 4rem;
+    height: 10%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
